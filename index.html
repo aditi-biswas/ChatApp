@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Realtime Node Socket.io Chat App</title>
+        <script defer src="http://localhost:8000/socket.io/socket.io.js"></script>  
+    <!-- using this server and client will connect. Command given in socket.io doc -->
+        <script defer src="js/client.js"></script>
+        <!-- since we ran the js script before so it wont accept any input from the html so we need to defer it -->
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <nav>
+            <img src="talkup.png" alt="ChatApp" class="logo">
+            <h1>Welcome to FreeChat App</h1>
+        </nav>
+        <div class="container"> 
+            <!-- dynamically populated by js -->
+            <!-- <div class="message left">Harry: How are you</div>
+            <div class="message right">I am fine</div> -->
+        </div>
+        <div class="send">
+            <form action="#" id="send-container" name="send-container">
+                <input type="text" class="messageInp" id="messageInp">
+                <button class="btn" type="submit">Send</button>
+            </form>
+        </div>
+    </body>
+</html>
